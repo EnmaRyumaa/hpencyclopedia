@@ -1,7 +1,6 @@
 package com.java.harrypotter.encyclopedia.entities;
 
 import jakarta.persistence.*;
-import org.springframework.boot.autoconfigure.web.WebProperties;
 
 import java.time.LocalDate;
 
