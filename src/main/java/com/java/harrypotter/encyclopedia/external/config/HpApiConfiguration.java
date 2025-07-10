@@ -7,7 +7,9 @@ import org.springframework.web.reactive.function.client.WebClient;
 @Configuration
 public class HpApiConfiguration {
     @Bean
-    public WebClient.Builder webClientBuilder() {
-        return WebClient.builder();
+    public static WebClient webClientBuilder() {
+        return WebClient.builder()
+                .baseUrl("https://hp-api.onrender.com/")
+                .build();
     }
 }
